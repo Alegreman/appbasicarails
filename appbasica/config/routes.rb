@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :registros
+  resources :productos
+  resources :clientes
   get 'ruta/saludo'
   get 'welcome/index'
   root 'ruta#saludo'
